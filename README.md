@@ -1,4 +1,4 @@
-# FP_TBO
+# Grammar Checker
 
 #### Ini merupakan hasil Final Project kami (Kelompok 5B) yang berupa [Aplikasi Pengecekan Kalimat Baku](https://agungmahadana-grammar-checker-fp-y6odf5.streamlit.app/). Project ini bertujuan untuk memenuhi tugas akhir mata kuliah Teori Bahasa dan Otomata.
 
