@@ -77,7 +77,7 @@ def initiate(list1 : list, list2 : list, array : list):
       # ada perubahan string ke notasi kalimat (contoh : noun)
       # jika elemen pada list2 ada pada list1, maka dapat diubah
       for k in list2[j][1:]:
-        if k in list1[i]:
+        if k == list1[i]:
           array[i][0] = list2[j][0]
   return array
 
