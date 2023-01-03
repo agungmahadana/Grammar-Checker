@@ -215,7 +215,7 @@ def matching(noun, list):
 
 # di bawah merupakan sintaks-sintaks streamlit untuk membuat tampilan aplikasi
 st.set_page_config(page_title="FP • Kelompok 5", page_icon="5️⃣")
-menu = st.sidebar.selectbox("📂 Menu ", ["🔍 Cek Kalimat", "📖 Kamus Kami"])
+menu = st.sidebar.selectbox("📂 Menu ", ["🔍 Cek Kalimat", "📖 Kamus Kami", "👥 Contact Us"])
 
 
 if menu == "🔍 Cek Kalimat":
@@ -265,3 +265,15 @@ elif menu == "📖 Kamus Kami":
     kamus.loc[i] = [noun[i], verb[i], adj[i], adv[i], prep[i], pronoun[i], propnoun[i], num[i]]
   
   kamus
+
+
+elif menu == "👥 Contact Us":
+  st.title("Contact Us")
+
+  st.markdown("""
+  - Gunggus | [Github](https://github.com/BangAjus)
+  - Agung Mahadana | [Github](https://github.com/agungmahadana)
+  - Wawan | [Github](https://github.com/Wawan-092)
+  - Gung Frady | [Github](https://github.com/Gungfrady)
+  - Raindra Pramathana | [Github](https://github.com/RaindraP)
+  """)
