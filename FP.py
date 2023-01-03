@@ -214,6 +214,7 @@ def matching(noun, list):
   return list
 
 # di bawah merupakan sintaks-sintaks streamlit untuk membuat tampilan aplikasi
+st.set_page_config(page_title="FP • Kelompok 5", page_icon="5️⃣")
 menu = st.sidebar.selectbox("📂 Menu ", ["🔍 Cek Kalimat", "📖 Kamus Kami"])
 
 
