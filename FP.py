@@ -214,7 +214,8 @@ def matching(noun, list):
   return list
 
 # di bawah merupakan sintaks-sintaks streamlit untuk membuat tampilan aplikasi
-menu = st.sidebar.selectbox("📂 Menu ", ["🔍 Cek Kalimat", "📖 Kamus Kami"])
+st.set_page_config(page_title="FP • Kelompok 5", page_icon="5️⃣")
+menu = st.sidebar.selectbox("📂 Menu ", ["🔍 Cek Kalimat", "📖 Kamus Kami", "👥 Contact Us"])
 
 
 if menu == "🔍 Cek Kalimat":
@@ -264,3 +265,36 @@ elif menu == "📖 Kamus Kami":
     kamus.loc[i] = [noun[i], verb[i], adj[i], adv[i], prep[i], pronoun[i], propnoun[i], num[i]]
   
   kamus
+
+
+elif menu == "👥 Contact Us":
+  st.title("Contact Us")
+
+  st.markdown(
+      """
+      <style>
+          div[data-testid="column"]
+          {
+              text-align: center;
+          } 
+      </style>
+      """,unsafe_allow_html=True
+  )
+
+  col1, col2, col3, col4, col5 = st.columns(5)
+
+  with col1:
+    st.image("https://avatars.githubusercontent.com/u/72916363?v=4")
+    st.markdown("[Gunggus](https://github.com/BangAjus)")
+  with col2:
+    st.image("https://avatars.githubusercontent.com/u/100138244?v=4")
+    st.caption("[Agung Mahadana](https://github.com/agungmahadana)")
+  with col3:
+    st.image("https://avatars.githubusercontent.com/u/107167667?v=4")
+    st.caption("[Wawan](https://github.com/Wawan-092)")
+  with col4:
+    st.image("https://avatars.githubusercontent.com/u/107132486?v=4")
+    st.caption("[Gung Frady](https://github.com/Gungfrady)")
+  with col5:
+    st.image("https://avatars.githubusercontent.com/u/94416844?v=4")
+    st.caption("[Raindra Pramathana](https://github.com/RaindraP)")
