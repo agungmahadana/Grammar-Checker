@@ -285,7 +285,7 @@ elif menu == "👥 Contact Us":
 
   with col1:
     st.image("https://avatars.githubusercontent.com/u/72916363?v=4")
-    st.markdown("[Gunggus](https://github.com/BangAjus)")
+    st.caption("[Gunggus](https://github.com/BangAjus)")
   with col2:
     st.image("https://avatars.githubusercontent.com/u/100138244?v=4")
     st.caption("[Agung Mahadana](https://github.com/agungmahadana)")
